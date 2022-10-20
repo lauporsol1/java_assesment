@@ -18,4 +18,8 @@ public class CambiarServiceImpl implements CambiarService {
 		return (List<Cambiar>) cambiarRepository.findAll();
 	}
 
+	public Cambiar saveCambiar(Cambiar cambiar) {
+		return cambiarRepository.save(cambiar);
+	}
+
 }

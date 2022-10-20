@@ -7,5 +7,6 @@ import com.java.models.Cambiar;
 public interface CambiarService {
 	
 	public List<Cambiar> getCambiar();
+	public Cambiar saveCambiar(Cambiar cambiar);
 
 }
