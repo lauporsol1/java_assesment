@@ -31,7 +31,7 @@ public class CambiarController {
 		return "create_table";
 	}
 	
-	@PostMapping("/process_creat_table")
+	@PostMapping("/process_create_table")
 	public String createTableProcess(Cambiar cambiar) {
 		cambiarService.saveCambiar(cambiar);
 		return "redirect:/table";
