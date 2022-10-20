@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.java.models.EnriqueSalazar;
 import com.java.services.EnriqueSalazarServiceImpl;
@@ -35,6 +36,20 @@ public class EnriqueSalazarController {
 	public String createTableProcess(EnriqueSalazar enriqueSalazar) {
 		enriqueSalazarService.saveEnriqueSalazar(enriqueSalazar);
 		return "redirect:/table";
+	}
+	
+	// TO USE WITH POSTMAN
+	
+	@GetMapping("/enrique_salazar")
+	public List<EnriqueSalazar> getEnriqueSalazars() {
+
+		return enriqueSalazarService.getEnriqueSalazar();
+	}
+	
+	@PostMapping("/add_enrique_salazar")
+	public String addTable(@RequestBody EnriqueSalazar enriqueSalazar) throws Exception {
+		enriqueSalazarService.saveEnriqueSalazar(enriqueSalazar);
+		return "New Enrique Salazar added to EnriqueSalazar";
 	}
 
 
