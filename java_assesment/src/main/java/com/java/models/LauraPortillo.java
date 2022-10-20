@@ -10,8 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "cambiar_table")
-public class Cambiar implements Serializable {
+@Table(name = "laura_portillo_table")
+public class LauraPortillo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -32,7 +32,7 @@ public class Cambiar implements Serializable {
 	@Column(name = "email", nullable=true)
 	private String email;
 
-	public Cambiar(Integer id, String firstName, String lastName, String phoneNumber, String email) {
+	public LauraPortillo(Integer id, String firstName, String lastName, String phoneNumber, String email) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -41,7 +41,7 @@ public class Cambiar implements Serializable {
 		this.email = email;
 	}
 	
-	public Cambiar() {
+	public LauraPortillo() {
 		
 	}
 
