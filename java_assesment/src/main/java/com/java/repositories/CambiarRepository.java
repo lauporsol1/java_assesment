@@ -7,6 +7,5 @@ import com.java.models.Cambiar;
 
 @Repository
 public interface CambiarRepository extends CrudRepository<Cambiar, Integer>{
-	
 
 }

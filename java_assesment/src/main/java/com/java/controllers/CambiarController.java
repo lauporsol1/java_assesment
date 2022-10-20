@@ -1,5 +1,6 @@
 package com.java.controllers;
 
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,5 +23,6 @@ public class CambiarController {
 		model.addAttribute("listCambiars", listCambiars);
 		return "table";
 	}
+
 
 }
